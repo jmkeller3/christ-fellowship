@@ -3,12 +3,15 @@ body {
   margin: 0;
 }
 
-nav {
+nav ul {
   width: 100%;
   grid-area: navbar;
+  background-color: #44a088;
+  margin: 0;
+  padding: 10px;
 }
 
-.wrapper {
+main {
   display: grid;
   grid-template-columns: 150px auto;
   grid-template-rows: 60px auto;
@@ -17,18 +20,17 @@ nav {
     "sidebar main";
 }
 
-ul {
-  list-style: "none";
-  padding: 0;
-  display: "inline-block";
-}
-
 ul li {
   display: inline;
   padding: 0 10px;
 }
 
-main {
+.main {
   grid-area: main;
   display: inline-block;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100vh;
 }

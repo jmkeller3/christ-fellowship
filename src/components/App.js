@@ -13,19 +13,16 @@ class App extends Component {
       {
         path: "/",
         exact: true,
-        sidebar: undefined,
         main: () => <Home />
       },
       {
         path: "/about",
         exact: true,
-        sidebar: () => <Sidebar links={["about"]} />,
         main: () => <About />
       },
       {
         path: "/contact",
         exact: true,
-        sidebar: () => <Sidebar links={["contact"]} />,
         main: () => <Contact />
       }
     ];
@@ -45,16 +42,6 @@ class App extends Component {
               </li>
             </ul>
           </nav>
-          <div className="sidebar">
-            {routes.map(route => (
-              <Route
-                key={route.path}
-                path={route.path}
-                exact={route.exact}
-                component={route.sidebar}
-              />
-            ))}
-          </div>
           <div className="content" />
           {routes.map(route => (
             <Route
