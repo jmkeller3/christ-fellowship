@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SimpleSlider from "./SimpleSlider";
+import Show from "./Show";
 
 export default class Home extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class Home extends Component {
           <h2>Home</h2>
         </section>
         <section id="slideshow">
-          <SimpleSlider />
+          <Show />
         </section>
       </main>
     );
