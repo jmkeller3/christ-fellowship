@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Sidebar from "./Sidebar";
-import Tim from "../img/Tim.jpg";
-import Zach from "../img/Zach.jpg";
+import Zach from "../img/Tim.jpg";
+import Tim from "../img/Zach.jpg";
 
 export default class About extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class About extends Component {
         <div className="main">
           <h2>About</h2>
 
-          <div id="abt-church">
+          <section id="abt-church">
             <h3>Christ Fellowship</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -19,12 +19,14 @@ export default class About extends Component {
               facilis dolorum quas sed libero numquam tempore quibusdam error
               sit? Incidunt dicta laudantium aspernatur quos!
             </p>
-          </div>
-          <div id="abt-elders">
+          </section>
+          <section id="abt-elders">
             <h3>The Leaders</h3>
             <div className="elder">
               <h4>Timothy O'Day</h4>
-              <img src={Tim} alt="A portrait of Timothy O'Day" />
+              <div className="img-container">
+                <img src={Tim} alt="A portrait of Timothy O'Day" />
+              </div>
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,7 +38,9 @@ export default class About extends Component {
             </div>
             <div className="elder">
               <h4>Zach Thompson</h4>
-              <img src={Zach} alt="A portrait of Zach Thompson" />
+              <div className="img-container">
+                <img src={Zach} alt="A portrait of Zach Thompson" />
+              </div>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore accusantium et debitis hic veniam officia fugit ipsa
@@ -45,8 +49,8 @@ export default class About extends Component {
                 sit? Incidunt dicta laudantium aspernatur quos!
               </p>
             </div>
-          </div>
-          <div id="abt-location">
+          </section>
+          <section id="abt-location">
             <h3>Lehi, UT</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -55,11 +59,15 @@ export default class About extends Component {
               facilis dolorum quas sed libero numquam tempore quibusdam error
               sit? Incidunt dicta laudantium aspernatur quos!
             </p>
-          </div>
+          </section>
         </div>
         <div className="sidebar">
           <Sidebar
-            links={["About the Church", "About the Elders", "About Lehi, UT"]}
+            links={[
+              { text: "About the Church", href: "#abt-church" },
+              { text: "About the Elders", href: "#abt-elders" },
+              { text: "About Lehi, UT", href: "#abt-location" }
+            ]}
           />
         </div>
       </main>

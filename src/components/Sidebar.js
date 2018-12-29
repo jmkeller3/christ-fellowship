@@ -3,8 +3,8 @@ import "./Sidebar.css";
 
 export default function Sidebar(props) {
   const links = props.links.map(link => (
-    <li key={link}>
-      <a href="#">{link}</a>
+    <li key={link.href}>
+      <a href={link.href}>{link.text}</a>
     </li>
   ));
 
