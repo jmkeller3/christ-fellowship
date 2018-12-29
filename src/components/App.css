@@ -4,7 +4,6 @@ body {
 }
 
 nav ul {
-  width: 100%;
   grid-area: navbar;
   background-color: #44a088;
   margin: 0;

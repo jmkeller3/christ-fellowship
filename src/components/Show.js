@@ -6,10 +6,23 @@ import Zach from "../img/Zach.jpg";
 export default class Show extends Component {
   render() {
     return (
-      <Carousel slideWidth="500px">
+      <Carousel
+        slideWidth="300px"
+        slidesToShow={1}
+        wrapAround={true}
+        autoplay={true}
+        autoplayInterval={5000}
+        //cellSpacing={50}
+        dragging={false}
+        framePadding="10"
+        heightMode="max"
+        transitionMode="fade"
+        withoutControls={true}
+      >
         <img src={Tim} alt="Tim" />
         <img src={Zach} alt="Zach" />
         <img src={Tim} alt="Tim" />
+        <img src={Zach} alt="Zach" />
       </Carousel>
     );
   }
