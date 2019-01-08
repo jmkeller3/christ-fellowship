@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Sidebar from "./Sidebar";
-import Zach from "../img/Tim.jpg";
-import Tim from "../img/Zach.jpg";
+import Tim from "../img/Tim.jpg";
+import Zach from "../img/Zach.jpeg";
 
 export default class About extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Carousel from "nuka-carousel";
 import Tim from "../img/Tim.jpg";
-import Zach from "../img/Zach.jpg";
+import Zach from "../img/Zach.jpeg";
 
 export default class Show extends Component {
   render() {

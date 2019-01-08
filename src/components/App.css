@@ -5,7 +5,8 @@ body {
 
 nav ul {
   grid-area: navbar;
-  background-color: #44a088;
+  background-color: #44a187;
+  color: #fff;
   margin: 0;
   padding: 10px;
 }
