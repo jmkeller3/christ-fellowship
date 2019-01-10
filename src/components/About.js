@@ -3,6 +3,8 @@ import Sidebar from "./Sidebar";
 import Tim from "../img/Tim.jpg";
 import Zach from "../img/Zach.jpeg";
 
+import "./About.css";
+
 export default class About extends Component {
   render() {
     return (

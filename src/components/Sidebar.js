@@ -1,9 +1,10 @@
 import React from "react";
+
 import "./Sidebar.css";
 
 export default function Sidebar(props) {
   const links = props.links.map(link => (
-    <li key={link.href}>
+    <li key={link.text}>
       <a href={link.href}>{link.text}</a>
     </li>
   ));

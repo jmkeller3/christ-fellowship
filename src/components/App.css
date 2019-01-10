@@ -1,9 +1,10 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: #93cbab;
 }
 
-nav ul {
+nav {
   grid-area: navbar;
   background-color: #44a187;
   color: #fff;
@@ -11,22 +12,15 @@ nav ul {
   padding: 10px;
 }
 
-nav ul a {
+.MuiButton-label-2 {
   color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 main {
   display: grid;
   grid-template-columns: 150px auto;
-  grid-template-rows: 60px auto;
-  grid-template-areas:
-    "navbar navbar"
-    "sidebar main";
+  grid-template-rows: auto;
+  grid-template-areas: "sidebar main";
 }
 
 ul li {
@@ -37,9 +31,10 @@ ul li {
 .main {
   grid-area: main;
   display: inline-block;
-  height: 100vh;
+  padding: 10px;
 }
 
 .sidebar {
-  height: 100vh;
+  grid-area: sidebar;
+  position: fixed;
 }

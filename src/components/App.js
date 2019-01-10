@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
-// import Sidebar from "./Sidebar";
+import Button from "@material-ui/core/Button";
 
 import "./App.css";
 
@@ -26,11 +26,19 @@ class App extends Component {
         main: () => <Contact />
       }
     ];
+
+    const HomeLink = props => <Link to="/" {...props} />;
+    const AboutLink = props => <Link to="/about" {...props} />;
+    const ContactLink = props => <Link to="/contact" {...props} />;
+
     return (
       <Router>
         <div className="wrapper">
           <nav>
-            <ul>
+            <Button component={HomeLink}>Home</Button>
+            <Button component={AboutLink}>About</Button>
+            <Button component={ContactLink}>Contact</Button>
+            {/* <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -40,7 +48,7 @@ class App extends Component {
               <li>
                 <Link to="/contact">Contact</Link>
               </li>
-            </ul>
+            </ul> */}
           </nav>
           <div className="content" />
           {routes.map(route => (

@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import Carousel from "nuka-carousel";
-import Tim from "../img/Tim.jpg";
-import Zach from "../img/Zach.jpeg";
+import Pic1 from "../img/Summer.jpg";
+import Pic2 from "../img/Prayer.jpg";
+import Pic3 from "../img/Church.jpg";
+import Pic4 from "../img/Church_Kids.jpg";
+import Pic5 from "../img/POS_1.jpg";
+import Pic6 from "../img/POS_2.jpg";
+import Pic7 from "../img/Summer_Blue.JPEG";
+import Pic8 from "../img/Summer_Kids.jpg";
 
 export default class Show extends Component {
   render() {
     return (
       <Carousel
-        slideWidth="300px"
+        slideWidth="500px"
         slidesToShow={1}
         wrapAround={true}
         autoplay={true}
@@ -19,10 +25,14 @@ export default class Show extends Component {
         transitionMode="fade"
         withoutControls={true}
       >
-        <img src={Tim} alt="Tim" />
-        <img src={Zach} alt="Zach" />
-        <img src={Tim} alt="Tim" />
-        <img src={Zach} alt="Zach" />
+        <img src={Pic1} alt="" />
+        <img src={Pic2} alt="" />
+        <img src={Pic3} alt="" />
+        <img src={Pic4} alt="" />
+        <img src={Pic5} alt="" />
+        <img src={Pic6} alt="" />
+        <img src={Pic7} alt="" />
+        <img src={Pic8} alt="" />
       </Carousel>
     );
   }

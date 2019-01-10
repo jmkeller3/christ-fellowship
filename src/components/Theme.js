@@ -5,11 +5,16 @@ import App from "./App";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#44a187"
+      main: "#44a187",
+      contrastText: "#fff"
     },
     secondary: {
-      main: "#93cbab"
+      main: "#93cbab",
+      contrastText: "#000"
     }
+  },
+  typography: {
+    useNextVariants: true
   }
 });
 
