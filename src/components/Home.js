@@ -9,7 +9,25 @@ export default class Home extends Component {
         <section id="slideshow">
           <Show />
         </section>
-        <section id="home-info">
+        <section className="info" id="home-info">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            accusantium et debitis hic veniam officia fugit ipsa eius quos, ab
+            voluptate voluptatibus sunt aliquid necessitatibus facilis dolorum
+            quas sed libero numquam tempore quibusdam error sit? Incidunt dicta
+            laudantium aspernatur quos!
+          </p>
+        </section>
+        <section className="info" id="giving-info">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            accusantium et debitis hic veniam officia fugit ipsa eius quos, ab
+            voluptate voluptatibus sunt aliquid necessitatibus facilis dolorum
+            quas sed libero numquam tempore quibusdam error sit? Incidunt dicta
+            laudantium aspernatur quos!
+          </p>
+        </section>
+        <section className="info" id="who-info">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             accusantium et debitis hic veniam officia fugit ipsa eius quos, ab

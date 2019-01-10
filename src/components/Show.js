@@ -21,7 +21,8 @@ export default class Show extends Component {
         //cellSpacing={50}
         dragging={false}
         framePadding="10"
-        heightMode="max"
+        heightMode="first"
+        initialSlideHeight={200}
         transitionMode="fade"
         withoutControls={true}
       >
