@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Sidebar from "./Sidebar";
 
+import "./Contact.css";
+
 export default class Contact extends Component {
   render() {
     return (
