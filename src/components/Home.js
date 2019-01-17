@@ -10,6 +10,7 @@ export default class Home extends Component {
           <Show />
         </section>
         <section className="info" id="gathering-info">
+          <h3>Weekly Gathering</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             accusantium et debitis hic veniam officia fugit ipsa eius quos, ab
@@ -19,6 +20,7 @@ export default class Home extends Component {
           </p>
         </section>
         <section className="info" id="mission-info">
+          <h3>Mission Statement</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             accusantium et debitis hic veniam officia fugit ipsa eius quos, ab
@@ -28,6 +30,7 @@ export default class Home extends Component {
           </p>
         </section>
         <section className="info" id="giving-info">
+          <h3>Giving</h3>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
             accusantium et debitis hic veniam officia fugit ipsa eius quos, ab

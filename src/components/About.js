@@ -8,10 +8,9 @@ import "./About.css";
 export default class About extends Component {
   render() {
     return (
-      <main id="about">
-        <div className="main">
-          <h2>About</h2>
-          <section id="abt-church">
+      <main>
+        <div className="main" id="about">
+          <section className="abt" id="abt-church">
             <h3>Christ Fellowship</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -21,7 +20,7 @@ export default class About extends Component {
               sit? Incidunt dicta laudantium aspernatur quos!
             </p>
           </section>
-          <section id="abt-mission">
+          <section className="abt" id="abt-mission">
             <h3>Mission & Values</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -31,7 +30,7 @@ export default class About extends Component {
               sit? Incidunt dicta laudantium aspernatur quos!
             </p>
           </section>
-          <section id="abt-mission">
+          <section className="abt" id="abt-statement">
             <h3>Statement of Faith</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -41,7 +40,7 @@ export default class About extends Component {
               sit? Incidunt dicta laudantium aspernatur quos!
             </p>
           </section>
-          <section id="abt-expect">
+          <section className="abt" id="abt-expect">
             <h3>What to Expect</h3>
             <p>
               Our meeting time consists of hearing from God and responding to
@@ -111,7 +110,7 @@ export default class About extends Component {
               each others company.
             </p>
           </section>
-          <section id="abt-elders">
+          <section className="abt" id="abt-elders">
             <h3>The Leaders</h3>
             <div className="elder">
               <h4>Timothy O'Day</h4>
@@ -145,7 +144,7 @@ export default class About extends Component {
               </p>
             </div>
           </section>
-          <section id="abt-location">
+          <section className="abt" id="abt-location">
             <h3>Lehi, UT</h3>
             <p>
               Lehi is in great need of gospel proclamation and gospel presence,
@@ -164,9 +163,12 @@ export default class About extends Component {
         <div className="sidebar">
           <Sidebar
             links={[
-              { text: "About the Church", href: "#abt-church" },
-              { text: "About the Elders", href: "#abt-elders" },
-              { text: "About Lehi, UT", href: "#abt-location" }
+              { text: "Christ Fellowship", href: "#abt-church" },
+              { text: "Leadership", href: "#abt-elders" },
+              { text: "Lehi, UT", href: "#abt-location" },
+              { text: "Mission", href: "#abt-mission" },
+              { text: "Beliefs", href: "#abt-statement" },
+              { text: "Service", href: "#abt-expect" }
             ]}
           />
         </div>
