@@ -2,6 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "normalize.css";
 import "./index.css";
-import App from "./components/App";
+import Theme from "./components/Theme";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Theme />, document.getElementById("root"));

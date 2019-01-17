@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Sidebar from "./Sidebar";
 
+import "./Contact.css";
+
 export default class Contact extends Component {
   render() {
     return (
@@ -20,7 +22,13 @@ export default class Contact extends Component {
           </div>
         </div>
         <div className="sidebar">
-          <Sidebar links={["Contact Church", "Vist", "Address"]} />
+          <Sidebar
+            links={[
+              { text: "Contact Church", href: "#contact" },
+              { text: "Vist", href: "#visit" },
+              { text: "Address", href: "#address" }
+            ]}
+          />
         </div>
       </main>
     );

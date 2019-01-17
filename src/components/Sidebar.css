@@ -1,10 +1,25 @@
 .sidebar-links {
-  background: #93cbab;
   padding: 10px 0;
-  height: 100%;
+}
+
+.sidebar-links ul {
+  margin: 20vh 0;
+  padding: 1px 0;
+  border: 2px solid #93cbab;
+  background-color: #fff;
 }
 
 .sidebar-links ul li {
   display: block;
   padding: 10px 10px;
+}
+
+.sidebar-links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a:focus {
+  text-decoration: underline;
 }
