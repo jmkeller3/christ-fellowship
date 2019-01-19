@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
+import Sermons from "./Sermons";
 import Button from "@material-ui/core/Button";
 
 import "./App.css";
@@ -14,6 +15,11 @@ class App extends Component {
         path: "/",
         exact: true,
         main: () => <Home />
+      },
+      {
+        path: "/sermons",
+        exact: true,
+        main: () => <Sermons />
       },
       {
         path: "/about",
@@ -28,6 +34,7 @@ class App extends Component {
     ];
 
     const HomeLink = props => <Link to="/" {...props} />;
+    const SermonLink = props => <Link to="/sermons" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
 
@@ -36,6 +43,7 @@ class App extends Component {
         <div className="wrapper">
           <nav>
             <Button component={HomeLink}>Home</Button>
+            <Button component={SermonLink}>Sermons</Button>
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Contact</Button>
             {/* <ul>
