@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.8.2",
+    "firebase": "^5.8.0",
     "normalize.css": "^8.0.1",
     "nuka-carousel": "^4.4.4",
     "react": "^16.7.0",
