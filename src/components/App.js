@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
@@ -18,17 +19,17 @@ class App extends Component {
       },
       {
         path: "/sermons",
-        exact: true,
+        exact: false,
         main: () => <Sermons />
       },
       {
-        path: "/about",
-        exact: true,
+        path: "/about/",
+        exact: false,
         main: () => <About />
       },
       {
         path: "/contact",
-        exact: true,
+        exact: false,
         main: () => <Contact />
       }
     ];
@@ -40,13 +41,15 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="wrapper">
-          <nav>
-            <Button component={HomeLink}>Home</Button>
-            <Button component={SermonLink}>Sermons</Button>
-            <Button component={AboutLink}>About</Button>
-            <Button component={ContactLink}>Contact</Button>
-            {/* <ul>
+        <Route
+          render={({ location }) => (
+            <div className="wrapper">
+              <nav>
+                <Button component={HomeLink}>Home</Button>
+                <Button component={SermonLink}>Sermons</Button>
+                <Button component={AboutLink}>About</Button>
+                <Button component={ContactLink}>Contact</Button>
+                {/* <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -57,17 +60,29 @@ class App extends Component {
                 <Link to="/contact">Contact</Link>
               </li>
             </ul> */}
-          </nav>
-          <div className="content" />
-          {routes.map(route => (
-            <Route
-              key={route.path}
-              path={route.path}
-              exact={route.exact}
-              component={route.main}
-            />
-          ))}
-        </div>
+              </nav>
+              <div className="content" />
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  timeout={500}
+                  classNames="fade"
+                >
+                  <Switch location={location}>
+                    {routes.map(route => (
+                      <Route
+                        key={route.path}
+                        path={route.path}
+                        exact={route.exact}
+                        component={route.main}
+                      />
+                    ))}
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            </div>
+          )}
+        />
       </Router>
     );
   }
