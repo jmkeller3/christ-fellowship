@@ -32,6 +32,16 @@
 
 .info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  margin: 0 auto;
+}
+
+.info a {
+  margin: 24px 54px;
 }
 /* 
 @media screen and (max-width: 769px) {

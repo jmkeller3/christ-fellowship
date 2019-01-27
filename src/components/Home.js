@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Show from "./Show";
+import Button from "@material-ui/core/Button";
 import "./Home.css";
 
 export default class Home extends Component {
@@ -38,6 +39,15 @@ export default class Home extends Component {
             quas sed libero numquam tempore quibusdam error sit? Incidunt dicta
             laudantium aspernatur quos!
           </p>
+          <Button
+            variant="contained"
+            color="primary"
+            href="https://tithe.ly/give_new/www/#/tithely/give-one-time/567613"
+            target="_blank"
+            size="large"
+          >
+            Give
+          </Button>
         </section>
       </main>
     );
