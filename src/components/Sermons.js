@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import ReactAudioPlayer from "react-audio-player";
 import "./Sermons.css";
 
 import sermon from "../sermons/Test.m4a";
@@ -13,6 +13,7 @@ export default class Sermons extends Component {
       <main id="sermons">
         <div className="sermon-browser">
           <audio controls src={sermon} />
+          <ReactAudioPlayer controls src={sermon} />
         </div>
       </main>
     );
