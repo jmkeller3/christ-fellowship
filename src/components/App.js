@@ -18,11 +18,6 @@ class App extends Component {
         main: () => <Home />
       },
       {
-        path: "/sermons",
-        exact: true,
-        main: () => <Sermons />
-      },
-      {
         path: "/about",
         exact: true,
         main: () => <About />
@@ -40,8 +35,7 @@ class App extends Component {
     ];
 
     const HomeLink = props => <Link to="/" {...props} />;
-    // const StatementLink = props => <Link to="/statement" {...props} />;
-    const SermonLink = props => <Link to="/sermons" {...props} />;
+
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
 
@@ -50,21 +44,8 @@ class App extends Component {
         <div className="wrapper">
           <nav>
             <Button component={HomeLink}>Home</Button>
-            <Button component={SermonLink}>Sermons</Button>
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Connect</Button>
-            {/* <Button component={StatementLink}>Statement</Button> */}
-            {/* <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul> */}
           </nav>
           <div className="content" />
           {routes.map(route => (
