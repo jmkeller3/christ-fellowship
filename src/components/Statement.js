@@ -16,6 +16,7 @@ import "./Statement.css";
 const styles = theme => ({
   card: {
     maxWidth: 500,
+    minWidth: 500,
     marginBottom: 10,
     marginTop: 10,
     display: "flex",
@@ -48,10 +49,52 @@ const styles = theme => ({
 });
 
 class Statement extends React.Component {
-  state = { expanded: false };
+  state = {
+    card1: { expanded: false },
+    card2: { expanded: false },
+    card3: { expanded: false },
+    card4: { expanded: false },
+    card5: { expanded: false },
+    card6: { expanded: false },
+    card7: { expanded: false },
+    card8: { expanded: false },
+    card9: { expanded: false }
+  };
 
-  handleExpandClick = () => {
-    this.setState(state => ({ expanded: !state.expanded }));
+  handleExpandClick1 = () => {
+    this.setState(state => ({ card1: { expanded: !state.card1.expanded } }));
+  };
+
+  handleExpandClick2 = () => {
+    this.setState(state => ({ card2: { expanded: !state.card2.expanded } }));
+  };
+
+  handleExpandClick3 = () => {
+    this.setState(state => ({ card3: { expanded: !state.card3.expanded } }));
+  };
+
+  handleExpandClick4 = () => {
+    this.setState(state => ({ card4: { expanded: !state.card4.expanded } }));
+  };
+
+  handleExpandClick5 = () => {
+    this.setState(state => ({ card5: { expanded: !state.card5.expanded } }));
+  };
+
+  handleExpandClick6 = () => {
+    this.setState(state => ({ card6: { expanded: !state.card6.expanded } }));
+  };
+
+  handleExpandClick7 = () => {
+    this.setState(state => ({ card7: { expanded: !state.card7.expanded } }));
+  };
+
+  handleExpandClick8 = () => {
+    this.setState(state => ({ card8: { expanded: !state.card8.expanded } }));
+  };
+
+  handleExpandClick9 = () => {
+    this.setState(state => ({ card9: { expanded: !state.card9.expanded } }));
   };
 
   render() {
@@ -66,16 +109,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card1.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick1}
+                aria-expanded={this.state.card1.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card1.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   The statement of faith that follows is designed to set forth
@@ -101,16 +148,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card2.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick2}
+                aria-expanded={this.state.card2.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card2.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   The 66 books of the Old and New Testaments, commonly known as
@@ -139,16 +190,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card3.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick3}
+                aria-expanded={this.state.card3.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card3.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   There is one and only one living and true God. He is an
@@ -235,21 +290,25 @@ class Statement extends React.Component {
           </Card>
           <Card className={classes.card}>
             <Typography className={classes.header} component="h4" variant="h4">
-              Humanity
+              Salvation
             </Typography>
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card4.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick4}
+                aria-expanded={this.state.card4.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card4.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   Salvation involves the redemption of the whole man, and is
@@ -337,21 +396,25 @@ class Statement extends React.Component {
           </Card>
           <Card className={classes.card}>
             <Typography className={classes.header} component="h4" variant="h4">
-              Salvation
+              Humanity
             </Typography>
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card5.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick5}
+                aria-expanded={this.state.card5.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card5.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   Man is the special creation of God, made in His own image. He
@@ -395,16 +458,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card6.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick6}
+                aria-expanded={this.state.card6.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card6.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   Election is the gracious purpose of God, according to which He
@@ -434,16 +501,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card7.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick7}
+                aria-expanded={this.state.card7.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card7.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   A New Testament church of the Lord Jesus Christ is an
@@ -470,16 +541,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card8.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick8}
+                aria-expanded={this.state.card8.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card8.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   Christian baptism, being the believer’s profession of faith,
@@ -505,16 +580,20 @@ class Statement extends React.Component {
             <CardActions className={classes.actions} disableActionSpacing>
               <IconButton
                 className={classnames(classes.expand, {
-                  [classes.expandOpen]: this.state.expanded
+                  [classes.expandOpen]: this.state.card9.expanded
                 })}
-                onClick={this.handleExpandClick}
-                aria-expanded={this.state.expanded}
+                onClick={this.handleExpandClick9}
+                aria-expanded={this.state.card9.expanded}
                 aria-label="Show more"
               >
                 <ExpandMoreIcon className={classes.arrow} />
               </IconButton>
             </CardActions>
-            <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+            <Collapse
+              in={this.state.card9.expanded}
+              timeout="auto"
+              unmountOnExit
+            >
               <CardContent>
                 <Typography component="p">
                   God, in His own time and in His own way, will bring the world
