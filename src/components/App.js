@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
-import Sermons from "./Sermons";
 import Statement from "./Statement";
 import Button from "@material-ui/core/Button";
 
