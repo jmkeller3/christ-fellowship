@@ -34,7 +34,7 @@ class App extends Component {
     ];
 
     const HomeLink = props => <Link to="/" {...props} />;
-
+    const StatementLink = props => <Link to="/statement" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
 
@@ -45,6 +45,7 @@ class App extends Component {
             <Button component={HomeLink}>Home</Button>
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Connect</Button>
+            <Button component={StatementLink}>Beliefs</Button>
           </nav>
           <div className="content" />
           {routes.map(route => (
