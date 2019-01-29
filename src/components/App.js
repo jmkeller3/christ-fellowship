@@ -4,6 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
 import Sermons from "./Sermons";
+import Statement from "./Statement";
 import Button from "@material-ui/core/Button";
 
 import "./App.css";
@@ -30,10 +31,16 @@ class App extends Component {
         path: "/contact",
         exact: true,
         main: () => <Contact />
+      },
+      {
+        path: "/statement",
+        exact: true,
+        main: () => <Statement />
       }
     ];
 
     const HomeLink = props => <Link to="/" {...props} />;
+    // const StatementLink = props => <Link to="/statement" {...props} />;
     const SermonLink = props => <Link to="/sermons" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
@@ -45,7 +52,8 @@ class App extends Component {
             <Button component={HomeLink}>Home</Button>
             <Button component={SermonLink}>Sermons</Button>
             <Button component={AboutLink}>About</Button>
-            <Button component={ContactLink}>Contact</Button>
+            <Button component={ContactLink}>Connect</Button>
+            {/* <Button component={StatementLink}>Statement</Button> */}
             {/* <ul>
               <li>
                 <Link to="/">Home</Link>
