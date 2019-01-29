@@ -68,7 +68,7 @@ class Statement extends React.Component {
                 className={classnames(classes.expand, {
                   [classes.expandOpen]: this.state.expanded
                 })}
-                onClick={this.handleExpandClick()}
+                onClick={this.handleExpandClick}
                 aria-expanded={this.state.expanded}
                 aria-label="Show more"
               >
@@ -94,7 +94,6 @@ class Statement extends React.Component {
               </CardContent>
             </Collapse>
           </Card>
-          {/*
           <Card className={classes.card}>
             <Typography className={classes.header} component="h4" variant="h4">
               The Scriptures
@@ -529,7 +528,7 @@ class Statement extends React.Component {
                 </Typography>
               </CardContent>
             </Collapse>
-          </Card>*/}
+          </Card>
         </div>
       </main>
     );
