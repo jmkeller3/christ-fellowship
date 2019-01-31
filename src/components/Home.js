@@ -1,20 +1,30 @@
 import React, { Component } from "react";
-import Show from "./Show";
+import Logo from "../img/Logo.svg";
 import Button from "@material-ui/core/Button";
+import BG from "../img/Prayer.jpg";
 import "./Home.css";
 
 export default class Home extends Component {
   render() {
     return (
       <main id="home">
-        <section id="slideshow">
-          <Show />
+        <section
+          style={{
+            backgroundImage: `url(${BG})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            opacity: 0.8
+          }}
+          id="hero"
+        >
+          <img src={Logo} alt="Christ Fellowship Church Logo" />
         </section>
         <section className="info" id="gathering-info">
           <h3>Weekly Gathering</h3>
           <p>
             We gather every Sunday to celebrate the resurrection of Jesus and
-            the life that we have through the gospel. Click below for more info.
+            the life that we have through the gospel. Click below for more
+            infomation.
           </p>
           <Button
             variant="contained"
@@ -32,6 +42,14 @@ export default class Home extends Component {
             equiping disciples of Jesus Christ through the power of the Holy
             Spirit.
           </p>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            href="/about/#abt-church"
+          >
+            More Information
+          </Button>
         </section>
         <section className="info" id="giving-info">
           <h3>Giving</h3>

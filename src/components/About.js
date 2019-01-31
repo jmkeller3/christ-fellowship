@@ -66,6 +66,12 @@ export default class About extends Component {
               color="primary"
               size="large"
               href="/statement"
+              style={{
+                maxWidth: 250,
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: 20
+              }}
             >
               Statement of Faith
             </Button>

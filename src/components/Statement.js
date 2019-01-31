@@ -50,7 +50,7 @@ const styles = theme => ({
 
 class Statement extends React.Component {
   state = {
-    card1: { expanded: false },
+    card1: { expanded: true },
     card2: { expanded: false },
     card3: { expanded: false },
     card4: { expanded: false },
