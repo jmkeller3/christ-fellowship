@@ -8,4 +8,11 @@ const config = {
   messagingSenderId: "431166887910"
 };
 firebase.initializeApp(config);
+
+const storage = firebase.storage();
+
+const gsReference = storage.refFromURL(
+  "gs://christ-fellowship-41797.appspot.com"
+);
+
 export default firebase;
