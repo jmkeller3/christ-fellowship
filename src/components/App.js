@@ -4,6 +4,7 @@ import About from "./About";
 import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
+import Test from "./Test";
 import Button from "@material-ui/core/Button";
 
 import "./App.css";
@@ -30,6 +31,11 @@ class App extends Component {
         path: "/statement",
         exact: true,
         main: () => <Statement />
+      },
+      {
+        path: "/test",
+        exact: true,
+        main: () => <Test />
       }
     ];
 
