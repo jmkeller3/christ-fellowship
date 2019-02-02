@@ -4,10 +4,12 @@
   grid-template-rows: 359px 0px 300px 300px;
 }
 
-#slideshow {
-  grid-column: 2 / 4;
+#hero {
+  grid-column: 1 / 5;
   grid-row: 1 / 2;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 #gathering-info {
