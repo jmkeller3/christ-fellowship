@@ -6,8 +6,18 @@ import Contact from "./Contact";
 import Statement from "./Statement";
 import Test from "./Test";
 import Button from "@material-ui/core/Button";
-
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
+
+library.add(faEnvelope);
+library.add(faFacebook);
+library.add(faTwitter);
+library.add(faInstagram);
 
 class App extends Component {
   render() {
