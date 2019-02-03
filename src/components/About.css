@@ -64,6 +64,10 @@ img {
   grid-column: 2 / 4;
 }
 
+#abt-elders img {
+  border-radius: 50%;
+}
+
 #abt-location {
   background-color: #222;
   grid-row: 1 / 2;

@@ -24,7 +24,11 @@ const styles = theme => ({
 
     display: "flex",
     flexDirection: "column",
-    margin: "auto"
+    margin: "auto",
+    transitionDuration: "0.5s",
+    "&:hover": {
+      boxShadow: `5px 5px 15px 2px rgba(0,0,0,0.75);`
+    }
   },
   arrow: {
     padding: 0

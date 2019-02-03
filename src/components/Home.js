@@ -2,10 +2,31 @@ import React, { Component } from "react";
 import Logo from "../img/Logo.svg";
 import Button from "@material-ui/core/Button";
 import BG from "../img/Prayer.jpg";
+import { withStyles } from "@material-ui/core/styles";
+import HomeIcon from "../icons/baseline-home-24px.svg";
+import classnames from "classnames";
 import "./Home.css";
 
-export default class Home extends Component {
+const styles = theme => ({
+  root: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-end"
+  },
+  icon: {
+    margin: theme.spacing.unit * 2
+  },
+  iconHover: {
+    margin: theme.spacing.unit * 2,
+    "&:hover": {
+      color: "#44a187"
+    }
+  }
+});
+
+export class Home extends Component {
   render() {
+    const { classes } = this.props;
     return (
       <main id="home">
         <section
@@ -59,7 +80,7 @@ export default class Home extends Component {
           </p>
           <Button
             variant="contained"
-            color="primary"
+            color="secondary"
             href="https://tithe.ly/give_new/www/#/tithely/give-one-time/567613"
             target="_blank"
             size="large"
@@ -71,3 +92,5 @@ export default class Home extends Component {
     );
   }
 }
+
+export default withStyles(styles)(Home);
