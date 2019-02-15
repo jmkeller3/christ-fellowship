@@ -20,14 +20,14 @@ import "./Statement.css";
 const styles = theme => ({
   card: {
     maxWidth: 500,
-    minWidth: 500,
+    minWidth: 300,
 
     display: "flex",
     flexDirection: "column",
     margin: "auto",
     transitionDuration: "0.5s",
     "&:hover": {
-      boxShadow: `5px 5px 15px 2px rgba(0,0,0,0.75);`
+      boxShadow: `5px 5px 5px 2px rgba(0,0,0,0.75);`
     }
   },
   arrow: {
@@ -40,6 +40,10 @@ const styles = theme => ({
   spacer: {
     marginTop: 7,
     marginBottom: 7
+  },
+  padding: {
+    padding: 15,
+    color: "#555"
   },
   actions: {
     display: "flex"
@@ -72,15 +76,15 @@ function TabContainer({ children, dir }) {
 class Statement extends React.Component {
   state = {
     value: 0,
-    card1: { expanded: true },
-    card2: { expanded: true },
-    card3: { expanded: true },
-    card4: { expanded: true },
-    card5: { expanded: true },
-    card6: { expanded: true },
-    card7: { expanded: true },
-    card8: { expanded: true },
-    card9: { expanded: true }
+    card1: { expanded: false },
+    card2: { expanded: false },
+    card3: { expanded: false },
+    card4: { expanded: false },
+    card5: { expanded: false },
+    card6: { expanded: false },
+    card7: { expanded: false },
+    card8: { expanded: false },
+    card9: { expanded: false }
   };
 
   handleChange = (event, value) => {
@@ -165,6 +169,12 @@ class Statement extends React.Component {
                 >
                   Introduction
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;But we ought always to give thanks to God for you,
+                  brothers beloved by the Lord, because God chose you as the
+                  firstfruits to be saved, through sanctification by the Spirit
+                  and belief in the truth.&#8221; &#8212; 2 Thessalonians 2:13
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -210,6 +220,12 @@ class Statement extends React.Component {
                   variant="h4"
                 >
                   The Scriptures
+                </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;All Scripture is breathed out by God and profitable for
+                  teaching, for reproof, for correction, and for training in
+                  righteousness, that the man of God may be complete, equipped
+                  for every good work.&#8221; &#8212; 2 Timothy 2:16-17
                 </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
@@ -259,6 +275,11 @@ class Statement extends React.Component {
                   variant="h4"
                 >
                   God
+                </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;May the grace of the Lord Jesus Christ, and the love of
+                  God, and the fellowship of the Holy Spirit be with you
+                  all.&#8221; &#8212; 2 Corinthians 13:14
                 </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
@@ -375,6 +396,13 @@ class Statement extends React.Component {
                 >
                   Salvation
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;In him you also, when you heard the word of truth, the
+                  gospel of your salvation, and believed in him, were sealed
+                  with the promised Holy Spirit, who is the guarantee of our
+                  inheritance until we acquire possession of it, to the praise
+                  of his glory.&#8221; &#8212; Ephesians 1:12-14
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -490,6 +518,11 @@ class Statement extends React.Component {
                 >
                   Humanity
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;So God created man in his own image, in the image of
+                  God he created him; male and female he created them.&#8221;
+                  &#8212; Genesis 1:27
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -556,6 +589,15 @@ class Statement extends React.Component {
                 >
                   God's Purpose of Grace
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;He who did not spare his own Son but gave him up for us
+                  all, how will he not also with him graciously give us all
+                  things? Who shall bring any charge against God's elect? It is
+                  God who justifies. Who is to condemn? Christ Jesus is the one
+                  who died—more than that, who was raised—who is at the right
+                  hand of God, who indeed is interceding for us.&#8221; &#8212;
+                  Romans 8:32-34
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -607,6 +649,13 @@ class Statement extends React.Component {
                 >
                   The Church
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;Now to him who is able to do far more abundantly than
+                  all that we ask or think, according to the power at work
+                  within us, to him be glory in the church and in Christ Jesus
+                  throughout all generations, forever and ever. Amen.&#8221;
+                  &#8212; Ephesians 3:20-21
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -655,6 +704,12 @@ class Statement extends React.Component {
                 >
                   Baptism and Lord's Supper
                 </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;We were buried therefore with him by baptism into
+                  death, in order that, just as Christ was raised from the dead
+                  by the glory of the Father, we too might walk in newness of
+                  life.&#8221; &#8212; Romans 6:4
+                </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
                     className={classnames(classes.expand, {
@@ -700,6 +755,11 @@ class Statement extends React.Component {
                   variant="h4"
                 >
                   Last Things
+                </Typography>
+                <Typography className={classes.padding} component="p">
+                  &#8220;He who testifies to these things says, “Surely I am
+                  coming soon.” Amen. Come, Lord Jesus!&#8221; &#8212;
+                  Revelation 22:10
                 </Typography>
                 <CardActions className={classes.actions} disableActionSpacing>
                   <IconButton
