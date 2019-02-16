@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from "./About";
+import AboutCard from "./About-Card";
 import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
@@ -30,7 +30,7 @@ class App extends Component {
       {
         path: "/about",
         exact: true,
-        main: () => <About />
+        main: () => <AboutCard />
       },
       {
         path: "/contact",
