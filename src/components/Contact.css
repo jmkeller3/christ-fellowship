@@ -5,8 +5,17 @@
   align-items: center
 }
 
+#connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #connect h2 {
-  font-weight: 300
+ font-weight: 300;
+ margin: auto;
+ padding: 20px
 }
 
 #connect a {
@@ -40,4 +49,15 @@
   padding: 0 30px;
   font-weight: 200;
   line-height: 1.5
+}
+
+@media screen and (max-width: 769px) {
+  #connect a {
+    color: #44a187;
+    padding: 5px 20px;
+    transition-duration: 0.5s;
+  }  
+  #connect h2 {
+    padding: 20px;
+  }
 }

@@ -3,8 +3,6 @@ import Logo from "../img/Logo.svg";
 import Button from "@material-ui/core/Button";
 import BG from "../img/Prayer.jpg";
 import { withStyles } from "@material-ui/core/styles";
-import HomeIcon from "../icons/baseline-home-24px.svg";
-import classnames from "classnames";
 import "./Home.css";
 
 const styles = theme => ({
@@ -26,7 +24,7 @@ const styles = theme => ({
 
 export class Home extends Component {
   render() {
-    const { classes } = this.props;
+    // const { classes } = this.props;
     return (
       <main id="home">
         <section

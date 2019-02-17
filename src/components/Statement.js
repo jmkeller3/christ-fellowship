@@ -19,8 +19,8 @@ import "./Statement.css";
 
 const styles = theme => ({
   card: {
-    maxWidth: 500,
-    minWidth: 300,
+    maxWidth: 600,
+    minWidth: 200,
 
     display: "flex",
     flexDirection: "column",

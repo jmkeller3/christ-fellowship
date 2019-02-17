@@ -12,10 +12,7 @@ import {
 } from "@material-ui/core";
 import Tim from "../img/Tim.jpg";
 import Zach from "../img/Zach.jpeg";
-
-
-
-import classnames from "classnames";
+import './About.css'
 import SwipeableViews from "react-swipeable-views";
 
 function TabContainer(props) {
@@ -34,10 +31,12 @@ const styles = theme => ({
   },
   card: {
     maxWidth: 600,
-    minWidth: 300,
+    minWidth: 200,
     display: "flex",
     flexDirection: "column",
     margin: "auto",
+    justifyContent: 'center',
+    alignItems: 'center',
     transitionDuration: "0.5s",
     "&:hover": {
       boxShadow: `3px 3px 3px 2px rgba(0,0,0,0.5);`
@@ -134,7 +133,14 @@ export class AboutCard extends React.Component {
                   Leadership
                 </Typography>
                 <div className="elder">
-              <h4>Timothy O'Day</h4>
+                <Typography
+                  className={classes.header}
+                  component="h5"
+                  variant="h5"
+                >
+                  Timothy O'Day
+                </Typography>
+              
               <div className="img-container">
                 <img className={classes.circle} src={Tim} alt="A portrait of Timothy O'Day" />
               </div>
@@ -151,10 +157,15 @@ export class AboutCard extends React.Component {
               </Typography>
               <Typography className={classes.padding} component="p">Phone: (801) 831-4242</Typography >
               <Typography className={classes.padding} component="p">Email: Timothy@christfellowshipUtah.org</Typography>
-              <Typography className={classes.padding} component="p"> Twitter: Twitter handle</Typography>
             </div>
             <div className="elder">
-              <h4>Zach Thompson</h4>
+            <Typography
+                  className={classes.header}
+                  component="h5"
+                  variant="h5"
+                >
+                  Zach Thompson
+                </Typography>
               <div className="img-container">
                 <img className={classes.circle} src={Zach} alt="A portrait of Zach Thompson" />
               </div>
