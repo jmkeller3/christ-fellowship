@@ -33,15 +33,14 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper
   },
   card: {
-    maxWidth: 500,
+    maxWidth: 600,
     minWidth: 300,
-
     display: "flex",
     flexDirection: "column",
     margin: "auto",
     transitionDuration: "0.5s",
     "&:hover": {
-      boxShadow: `5px 5px 5px 2px rgba(0,0,0,0.75);`
+      boxShadow: `3px 3px 3px 2px rgba(0,0,0,0.5);`
     }
   },
   header: {
@@ -51,6 +50,9 @@ const styles = theme => ({
   },
   padding: {
     padding: 5
+  },
+  circle: {
+    borderRadius: '50%'
   }
 });
 
@@ -95,7 +97,7 @@ export class AboutCard extends React.Component {
           onChangeIndex={this.handleChangeIndex}
         >
           <TabContainer dir={theme.direction}>
-            <Card className={classes.card}>
+            <Card id="abt-church" className={classes.card}>
               <CardContent>
                 <Typography
                   className={classes.header}
@@ -122,7 +124,7 @@ export class AboutCard extends React.Component {
             </Card>
           </TabContainer>
           <TabContainer dir={theme.direction}>
-            <Card className={classes.card}>
+            <Card id="abt-elders" className={classes.card}>
               <CardContent>
                 <Typography
                   className={classes.header}
@@ -134,7 +136,7 @@ export class AboutCard extends React.Component {
                 <div className="elder">
               <h4>Timothy O'Day</h4>
               <div className="img-container">
-                <img src={Tim} alt="A portrait of Timothy O'Day" />
+                <img className={classes.circle} src={Tim} alt="A portrait of Timothy O'Day" />
               </div>
               <Typography className={classes.padding} component="p">
                 Timothy is husband to Haley, father to Julia and Elias, and
@@ -154,7 +156,7 @@ export class AboutCard extends React.Component {
             <div className="elder">
               <h4>Zach Thompson</h4>
               <div className="img-container">
-                <img src={Zach} alt="A portrait of Zach Thompson" />
+                <img className={classes.circle} src={Zach} alt="A portrait of Zach Thompson" />
               </div>
               <p>
                 Zach is married to Courtney and has two daughters, Lana and

@@ -27,7 +27,7 @@ const styles = theme => ({
     margin: "auto",
     transitionDuration: "0.5s",
     "&:hover": {
-      boxShadow: `5px 5px 5px 2px rgba(0,0,0,0.75);`
+      boxShadow: `3px 3px 3px 2px rgba(0,0,0,0.5);`
     }
   },
   arrow: {
@@ -137,7 +137,7 @@ class Statement extends React.Component {
     return (
       <main id="statementoffaith">
         <div className={classes.root} id="statement">
-          <AppBar position="static" color="secondary">
+          <AppBar position="static" color="default">
             <Tabs
               value={value}
               onChange={this.handleChange}

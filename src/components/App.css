@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  background-color: #93cbab;
+  background-color: #fff;
 }
 
 nav {
@@ -15,13 +15,13 @@ nav {
 .MuiButton-label-2 {
   color: #fff;
 }
-
+/* 
 main {
   display: grid;
   grid-template-columns: 150px auto;
   grid-template-rows: auto;
   grid-template-areas: "sidebar main";
-}
+} */
 
 ul li {
   display: inline;
