@@ -12,6 +12,10 @@ nav {
   padding: 10px;
 }
 
+nav a {
+  color: #fff
+}
+
 .MuiButton-label-2 {
   color: #fff;
 }

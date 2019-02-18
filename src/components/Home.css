@@ -50,6 +50,10 @@
   box-shadow: 12px 12px 10px -8px rgba(0, 0, 0, 0.64);
 }
 
+#giving-info a {
+  color: #fff;
+}
+
 #giving-info:hover {
   background-color: hsl(163, 41%, 45%);
   -webkit-box-shadow:15px 15px 10px -8px rgba(0, 0, 0, 0.5);
