@@ -36,7 +36,9 @@ export class Home extends Component {
           }}
           id="hero"
         >
+        <div className="hero-container">
           <img src={Logo} alt="Christ Fellowship Church Logo" />
+          </div>
         </section>
         <section className="info" id="gathering-info">
           <h3>Weekly Gathering</h3>
@@ -49,7 +51,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            href="/about/#abt-expect"
+            href="/about/"
           >
             Weekly Gathering
           </Button>
@@ -65,7 +67,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            href="/about/#abt-church"
+            href="/about/"
           >
             More Information
           </Button>

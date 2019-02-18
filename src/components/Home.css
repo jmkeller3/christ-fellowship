@@ -72,6 +72,12 @@
   margin: auto;
 }
 
+.hero-container {
+  width: 50%;
+  margin: auto;
+  margin-top: -100px;
+}
+
 @media screen and (max-width: 769px) {
   #home {
     display: inline-block;
@@ -89,5 +95,14 @@
   #giving-info {
     margin-top: 0;
     border-top: 0
+  }
+  .hero-container {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hero-container {
+    margin-top: -180px;
   }
 }

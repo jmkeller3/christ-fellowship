@@ -282,6 +282,22 @@ export class AboutCard extends React.Component {
                   </li>
                 </ol>
                 </Typography>
+                <CardActions>
+                <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              href="/contact"
+              style={{
+                maxWidth: 250,
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: 20
+              }}
+            >
+              Meeting Times
+            </Button>
+                </CardActions>
               </CardContent>
             </Card>
           </TabContainer>

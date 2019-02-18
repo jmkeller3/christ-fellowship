@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
+
 import AboutCard from "./About-Card";
 import Home from "./Home";
 import Contact from "./Contact";
@@ -55,6 +57,7 @@ class App extends Component {
 
     return (
       <Router>
+        <Route render={({location}) => (
         <div className="wrapper">
           <nav>
             <Button component={HomeLink}>Home</Button>
@@ -63,6 +66,9 @@ class App extends Component {
             <Button component={StatementLink}>Beliefs</Button>
           </nav>
           <div className="content" />
+          <TransitionGroup>
+          <CSSTransition key={location.key} classNames="fade" timeout={300}>
+          <Switch location={location}>
           {routes.map(route => (
             <Route
               key={route.path}
@@ -71,7 +77,12 @@ class App extends Component {
               component={route.main}
             />
           ))}
+          </Switch>
+          </CSSTransition>
+          </TransitionGroup>
         </div>
+        )}
+        />
       </Router>
     );
   }

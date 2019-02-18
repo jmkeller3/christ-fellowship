@@ -31,7 +31,7 @@ export default class Contact extends Component {
           </div>
           <div id="gathering">
             <h2>Come visit with us</h2>
-            <h2>Every Sunday: 10:30 AM</h2>
+            <h2>Every Sunday at 10:30 AM</h2>
             <h3 id="meeting">
               We meet in members' homes every week. If you would like the visit,
               feel free to contact us and we will gladly let you know where we
