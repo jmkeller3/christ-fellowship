@@ -3,6 +3,7 @@ import Logo from "../img/Logo.svg";
 import Button from "@material-ui/core/Button";
 import BG from "../img/Prayer.jpg";
 import { withStyles } from "@material-ui/core/styles";
+import {Link} from 'react-router-dom';
 import "./Home.css";
 
 const styles = theme => ({
@@ -22,9 +23,14 @@ const styles = theme => ({
   }
 });
 
+
+
 export class Home extends Component {
+  
   render() {
-    // const { classes } = this.props;
+    const StatementLink = props => <Link to="/statement" {...props} />;
+    const AboutLink = props => <Link to="/about" {...props} />;
+
     return (
       <main id="home">
         <section
@@ -51,7 +57,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            href="/about"
+            component={AboutLink}
           >
             Weekly Gathering
           </Button>
@@ -60,14 +66,14 @@ export class Home extends Component {
           <h3>Mission Statement</h3>
           <p>
             Our purpose is to glorify God by multiplying, gathering, and
-            equiping disciples of Jesus Christ through the power of the Holy
+            equipping disciples of Jesus Christ through the power of the Holy
             Spirit.
           </p>
           <Button
             variant="contained"
             color="primary"
             size="large"
-            href="/about"
+            component={StatementLink}
           >
             More Information
           </Button>

@@ -1,7 +1,7 @@
 #home {
   display: grid;
   grid-template-columns: 15% 1fr 1fr 15%;
-  grid-template-rows: 359px 0px 300px 300px;
+  grid-template-rows:450px 0px 300px 300px;
 }
 
 #hero {
@@ -77,9 +77,9 @@
 }
 
 .hero-container {
-  width: 50%;
+  width: 70%;
   margin: auto;
-  margin-top: -100px;
+  margin-top: -20%;
 }
 
 @media screen and (max-width: 769px) {
@@ -107,15 +107,23 @@
 
 @media screen and (min-width: 1025px) {
   .hero-container {
-    margin-top: -100px;
-    width: 33%;
+   margin-top: -12%;
+    width: 60%;
+  }
+
+  #home {
+    grid-template-rows: 500px 0px 300px 300px;
   }
 }
 
 
 @media screen and (min-width: 1440px) {
   .hero-container {
-    margin-top: -100px;
-    width: 28%;
+    margin-top: -16%;
+    width: 55%;
+  }
+
+  #home {
+    grid-template-rows: 700px 0px 300px 300px;
   }
 }
