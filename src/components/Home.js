@@ -51,7 +51,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            href="/about/"
+            href="/about"
           >
             Weekly Gathering
           </Button>
@@ -67,7 +67,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            href="/about/"
+            href="/about"
           >
             More Information
           </Button>

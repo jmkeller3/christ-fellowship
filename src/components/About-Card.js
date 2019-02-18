@@ -107,7 +107,7 @@ export class AboutCard extends React.Component {
                 </Typography>
                 <Typography className={classes.padding} component="p">
                   Christ Fellowship is a recently established church is Lehi,
-                  UT. Our deisre is to live in light of the love of God
+                  UT. Our desire is to live in light of the love of God
                   displayed for us in the gospel of Jesus Christ. We say with
                   the apostle Paul:
                 </Typography>

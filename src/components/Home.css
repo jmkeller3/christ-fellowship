@@ -107,6 +107,15 @@
 
 @media screen and (min-width: 1025px) {
   .hero-container {
-    margin-top: -180px;
+    margin-top: -100px;
+    width: 33%;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    margin-top: -100px;
+    width: 28%;
   }
 }
