@@ -64,6 +64,7 @@ class App extends Component {
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Connect</Button>
             <Button component={StatementLink}>Beliefs</Button>
+            
           </nav>
           <div className="content" />
           <TransitionGroup>

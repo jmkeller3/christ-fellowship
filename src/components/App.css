@@ -10,10 +10,12 @@ nav {
   color: #fff;
   margin: 0;
   padding: 10px;
+  z-index: 2;
 }
 
 #navBar a {
-  color: #fff
+  color: #fff;
+  z-index: 2;
 }
 
 .MuiButton-label-2 {
@@ -35,11 +37,6 @@ ul li {
 .main {
   grid-area: main;
   padding: 10px;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  position: fixed;
 }
 
 .fade-enter {
