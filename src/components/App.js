@@ -59,7 +59,7 @@ class App extends Component {
       <Router>
         <Route render={({location}) => (
         <div className="wrapper">
-          <nav>
+          <nav id="navBar">
             <Button component={HomeLink}>Home</Button>
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Connect</Button>
