@@ -6,6 +6,8 @@ import { withStyles } from "@material-ui/core/styles";
 import {Link} from 'react-router-dom';
 import "./Home.css";
 
+
+// Themes for material-ui components
 const styles = theme => ({
   root: {
     display: "flex",

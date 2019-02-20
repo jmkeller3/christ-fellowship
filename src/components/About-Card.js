@@ -10,11 +10,13 @@ import {
   CardActions,
   Button
 } from "@material-ui/core";
+import {Link} from 'react-router-dom';
 import Tim from "../img/Tim.jpg";
 import Zach from "../img/Zach.jpeg";
 import './About.css'
 import SwipeableViews from "react-swipeable-views";
 
+// Container for Tabs
 function TabContainer(props) {
   return (
     <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -23,6 +25,7 @@ function TabContainer(props) {
   );
 }
 
+// Themes for Material-UI components
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -55,6 +58,7 @@ const styles = theme => ({
   }
 });
 
+// Component for About Page
 export class AboutCard extends React.Component {
   state = {
     value: 0
@@ -71,6 +75,7 @@ export class AboutCard extends React.Component {
   render() {
     const { classes, theme } = this.props;
     const { value } = this.state;
+    const StatementLink = props => <Link to="/statement" {...props} />;
 
     return (
       <div className={classes.root} id="about">
@@ -287,7 +292,7 @@ export class AboutCard extends React.Component {
               variant="contained"
               color="primary"
               size="large"
-              href="/contact"
+              component={StatementLink}
               style={{
                 maxWidth: 250,
                 marginLeft: "auto",

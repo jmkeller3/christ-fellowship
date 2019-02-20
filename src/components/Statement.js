@@ -17,6 +17,8 @@ import classnames from "classnames";
 import SwipeableViews from "react-swipeable-views";
 import "./Statement.css";
 
+
+// Themes for material-ui components
 const styles = theme => ({
   card: {
     maxWidth: 600,

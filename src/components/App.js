@@ -15,6 +15,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./App.css";
 
+// Icons from fortawesome
 library.add(faEnvelope);
 library.add(faFacebook);
 library.add(faTwitter);
@@ -22,6 +23,7 @@ library.add(faInstagram);
 
 class App extends Component {
   render() {
+    // Routes for react-router
     const routes = [
       {
         path: "/",
@@ -49,7 +51,8 @@ class App extends Component {
         main: () => <Test />
       }
     ];
-
+    
+// Links for buttons
     const HomeLink = props => <Link to="/" {...props} />;
     const StatementLink = props => <Link to="/statement" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
