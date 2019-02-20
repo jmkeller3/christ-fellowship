@@ -9,6 +9,9 @@ const config = {
 };
 firebase.initializeApp(config);
 
+const db = firebase.firestore();
+db.settings({timestampsInSnapshots: true});
+
 const storage = firebase.storage();
 
 const gsReference = storage.refFromURL(
