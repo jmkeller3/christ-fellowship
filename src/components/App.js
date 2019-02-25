@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {HashRouter, Route, Link, Switch} from 'react-router-dom';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
 import AboutCard from "./About-Card";
 import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
-import Test from "./Test";
 import Button from "@material-ui/core/Button";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -44,11 +44,6 @@ class App extends Component {
         path: "/statement",
         exact: true,
         main: () => <Statement />
-      },
-      {
-        path: "/test",
-        exact: true,
-        main: () => <Test />
       }
     ];
     
@@ -59,7 +54,7 @@ class App extends Component {
     const ContactLink = props => <Link to="/contact" {...props} />;
 
     return (
-      <Router>
+      <HashRouter>
         <Route render={({location}) => (
         <div className="wrapper">
           <nav id="navBar">
@@ -87,7 +82,7 @@ class App extends Component {
         </div>
         )}
         />
-      </Router>
+      </HashRouter>
     );
   }
 }
