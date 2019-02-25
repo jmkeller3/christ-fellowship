@@ -1,5 +1,6 @@
+import firebase from '../src/config/firebase';
 
-import db from './firebase';
+const db = firebase.firestore();
 
 const sermonList = document.querySelector('#sermon-list')
 
