@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import {HashRouter, Route, Link, Switch} from 'react-router-dom';
 import {TransitionGroup, CSSTransition} from 'react-transition-group';
 
@@ -7,6 +6,7 @@ import AboutCard from "./About-Card";
 import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
+import Sermons from './Sermons';
 import Button from "@material-ui/core/Button";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -44,6 +44,11 @@ class App extends Component {
         path: "/statement",
         exact: true,
         main: () => <Statement />
+      },
+      {
+        path: "/sermons",
+        exact: true,
+        main: () => <Sermons />
       }
     ];
     
@@ -52,6 +57,7 @@ class App extends Component {
     const StatementLink = props => <Link to="/statement" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
+    const SermonLink = props => <Link to='/sermons' />
 
     return (
       <HashRouter>
@@ -62,6 +68,7 @@ class App extends Component {
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Connect</Button>
             <Button component={StatementLink}>Beliefs</Button>
+            <Button component={SermonLink}>Sermons</Button>
             
           </nav>
           <div className="content" />

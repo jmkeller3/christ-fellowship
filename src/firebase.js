@@ -11,8 +11,6 @@ firebase.initializeApp(config);
 
 const storage = firebase.storage();
 
-const gsReference = storage.refFromURL(
-  "gs://christ-fellowship-41797.appspot.com"
-);
+const db = firebase.firestore();
 
-export default firebase;
+export {db, storage};
