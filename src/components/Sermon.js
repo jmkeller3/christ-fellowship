@@ -9,13 +9,14 @@ import Typography from '@material-ui/core/Typography';
 import Replay5 from '@material-ui/icons/Replay5';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import Forward5 from '@material-ui/icons/Forward5';
-import Pause from '@material-ui/icons/Pause'
+import Pause from '@material-ui/icons/Pause';
+import imageURL from '../img/Logo.svg'
 
 const styles = theme => ({
   card: {
     display: 'flex',
     minWidth: '250px',
-    maxWidth: '500px',
+    maxWidth: '400px',
     margin: 'auto'
   },
   details: {
@@ -27,6 +28,9 @@ const styles = theme => ({
   },
   cover: {
     width: 151,
+    height: 165,
+    marginLeft: 'auto'
+    
   },
   controls: {
     display: 'flex',
@@ -96,7 +100,7 @@ class Sermon extends Component {
       </div>
       <CardMedia
         className={classes.cover}
-        image="src/img/small_Logo.svg"
+        image={imageURL}
         title="Church Logo"
       />
     </Card>

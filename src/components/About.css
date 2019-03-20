@@ -17,6 +17,10 @@ img {
   padding: 12px 10px;
 }
 
+.italics {
+  margin: 10px 0;
+}
+
 @media screen and (max-width: 769px) {
   .img-container {
     width: 80%;

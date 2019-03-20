@@ -8,6 +8,20 @@ const testSermon = db.collection('sermons').doc('KxxJzmIeI7IARWus470d').get().th
     return {...sermon, audiolink}
 })
 
+const sermonReference = db.collection('sermons');
+
+sermonReference.get().then((querySnapshot) => {
+  if (querySnapshot.size > 0) {
+    querySnapshot.forEach((documentSnapshot) => {
+    let data = documentSnapshot.data();
+    console.log(data);
+    
+    })
+  } else {
+    console.log('no docs found');
+  }
+})
+
 // const allSermons = db.collection('sermons').get().then((querySnapshot) => {
 //   querySnapshot.forEach(async (sermon) => {
 //     console.log(`${sermon.id} => ${sermon.data().audio}`);

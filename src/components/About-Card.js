@@ -263,6 +263,7 @@ export class AboutCard extends React.Component {
                     the sermon align themselves with those points, claims, and
                     statements which the text itself communicates.
                   </li>
+                  <br />
                   <li>
                     <span className="italics">
                       We believe the whole counsel of God should be preached.
@@ -273,6 +274,7 @@ export class AboutCard extends React.Component {
                     Bible can be examined, not skipping portions that seem
                     difficult.
                   </li>
+                  <br />
                   <li>
                     <span className="italics">
                       We strive to proclaim the gospel in all that we do.
