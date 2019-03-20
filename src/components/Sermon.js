@@ -15,8 +15,8 @@ import imageURL from '../img/Logo.svg'
 const styles = theme => ({
   card: {
     display: 'flex',
-    minWidth: '250px',
-    maxWidth: '400px',
+    minWidth: '310px',
+    maxWidth: '350px',
     margin: 'auto'
   },
   details: {

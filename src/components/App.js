@@ -7,6 +7,7 @@ import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
 import Sermons from './Sermons';
+import Events from './Events';
 import Button from "@material-ui/core/Button";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +50,11 @@ class App extends Component {
         path: "/sermons",
         exact: true,
         main: () => <Sermons />
+      },
+      {
+        path: "/events",
+        exact: true,
+        main: () => <Events />
       }
     ];
     

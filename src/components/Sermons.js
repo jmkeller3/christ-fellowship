@@ -10,27 +10,25 @@ const testSermon = db.collection('sermons').doc('KxxJzmIeI7IARWus470d').get().th
 
 const sermonReference = db.collection('sermons');
 
+let sermonAudioLinks = [];
+
 sermonReference.get().then((querySnapshot) => {
   if (querySnapshot.size > 0) {
     querySnapshot.forEach((documentSnapshot) => {
     let data = documentSnapshot.data();
-    console.log(data);
+    sermonAudioLinks.push(data.audio)
     
     })
   } else {
     console.log('no docs found');
   }
+  console.log(sermonAudioLinks)
 })
-
-// const allSermons = db.collection('sermons').get().then((querySnapshot) => {
-//   querySnapshot.forEach(async (sermon) => {
-//     console.log(`${sermon.id} => ${sermon.data().audio}`);
-   
-//     let audio_link = await storage.ref(sermon.audio).getDownloadURL()
-//     return {...sermon, audio_link}
-//   })
-// })
-
+// returns undefined
+const sermonAudio = sermonAudioLinks.forEach(async(item) => {
+  const audiolink = await storage.ref(item).getDownloadURL()
+  return {...item, audiolink}
+})
 
 export default class Sermons extends Component {
   constructor(props) {
@@ -45,7 +43,7 @@ export default class Sermons extends Component {
   
   componentDidMount() {
       testSermon.then((sermon) => this.setState({sermon}))
-      // allSermons.then((sermons) => this.setState({sermons}))
+      // sermonAudio.then((sermons) => this.setState({sermons}))
   }
 
 
