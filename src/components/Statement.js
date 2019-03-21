@@ -53,7 +53,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     width: "100%",
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: '#93cbab'
   },
   expand: {
     transform: "rotate(0deg)",
@@ -137,7 +137,7 @@ class Statement extends React.Component {
     const { classes, theme } = this.props;
     const { value } = this.state;
     return (
-      <main id="statementoffaith">
+      <main id="statementoffaith" style={{backgroundColor: '#93cbab'}}>
         <div className={classes.root} id="statement">
           <AppBar position="static" color="default">
             <Tabs

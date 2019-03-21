@@ -30,7 +30,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     width: "100%",
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: '#93cbab'
   },
   card: {
     maxWidth: 600,

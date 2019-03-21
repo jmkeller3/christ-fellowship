@@ -25,10 +25,10 @@ sermonReference.get().then((querySnapshot) => {
   console.log(sermonAudioLinks)
 })
 // returns undefined
-const sermonAudio = sermonAudioLinks.forEach(async(item) => {
-  const audiolink = await storage.ref(item).getDownloadURL()
-  return {...item, audiolink}
-})
+// const sermonAudio = sermonAudioLinks.forEach(async(item) => {
+//   const audiolink = await storage.ref(item).getDownloadURL()
+//   return {...item, audiolink}
+// })
 
 export default class Sermons extends Component {
   constructor(props) {
