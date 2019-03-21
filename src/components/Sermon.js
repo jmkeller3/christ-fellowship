@@ -17,7 +17,8 @@ const styles = theme => ({
     display: 'flex',
     minWidth: '310px',
     maxWidth: '350px',
-    margin: 'auto'
+    margin: 'auto',
+    marginBottom: 10
   },
   details: {
     display: 'flex',
@@ -49,33 +50,28 @@ const styles = theme => ({
 });
 
 class Sermon extends Component {
-  constructor(props) {
-    super(props)
-    
-    this.state = {
-      playStatus: false
-    }
+  state = {
+    playStatus: false
   }
-
+  audio = new Audio(this.props.audio)
+    
   handlePlay = () => {
     
-    if (!this.state.playStatus) {
-      this.setState({playStatus: true})
-      console.log('Playing...')
-      // audio.play()
-    } else {
-      this.setState({playStatus: false})
-      console.log('Pausing...')
-      // audio.pause()
-    }
+    this.setState({ playStatus: !this.state.playStatus }, () => {
+      this.state.playStatus ? this.audio.play() : this.audio.pause();
+    });
     
     }
 
   render() {
-
+    console.log(this.props.audio)
   const { classes, theme } = this.props;
   return (
+    
     <Card className={classes.card}>
+      <audio src={this.props.audio}
+        ref={(audio) => { this.audio = audio } }
+        />
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
