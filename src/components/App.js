@@ -63,7 +63,8 @@ class App extends Component {
     const StatementLink = props => <Link to="/statement" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
     const ContactLink = props => <Link to="/contact" {...props} />;
-    const SermonLink = props => <Link to='/sermons' />
+    const SermonLink = props => <Link to='/sermons' {...props} />
+    const EventLink = props => <Link to='/events' {...props} />
 
     return (
       <HashRouter>
@@ -75,6 +76,8 @@ class App extends Component {
             <Button component={ContactLink}>Connect</Button>
             <Button component={StatementLink}>Beliefs</Button>
             <Button component={SermonLink}>Sermons</Button>
+            <Button component={EventLink}>Events</Button>
+            
             
           </nav>
           <div className="content" />
