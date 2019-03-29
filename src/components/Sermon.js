@@ -63,8 +63,12 @@ class Sermon extends Component {
     
     }
 
+  handleForward = () => {
+    this.audio.currentTime = this.audio.currentTime + 5000
+  }
+
   render() {
-    console.log(this.props.audio)
+    
   const { classes, theme } = this.props;
   return (
     
@@ -80,6 +84,7 @@ class Sermon extends Component {
           <Typography variant="subtitle1" color="textSecondary">
             {this.props.preacher}
           </Typography>
+          
         </CardContent>
         <div className={classes.controls}>
           <IconButton aria-label="Previous">
