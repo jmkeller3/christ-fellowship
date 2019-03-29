@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Typography} from "@material-ui/core"
 import Event from './Event'
 
 // const dateOptions = {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -28,7 +29,7 @@ export default class Events extends Component {
     )
     return (
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', backgroundColor: '#93cbab'}}>
-      <h1>Upcoming Events</h1>
+      <Typography gutterBottom={true} component="h2" variant="h2" style={{margin: '10px', color: '#fff'}}>Upcoming Events</Typography>
         {newEvents}
       </div>
     )
