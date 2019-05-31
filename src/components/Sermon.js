@@ -51,7 +51,8 @@ const styles = theme => ({
 
 class Sermon extends Component {
   state = {
-    playStatus: false
+    playStatus: false,
+    currentTime: 0
   }
   audio = new Audio(this.props.audio)
     
@@ -64,7 +65,12 @@ class Sermon extends Component {
     }
 
   handleForward = () => {
-    this.audio.currentTime = this.audio.currentTime + 5000
+    console.log('forward')
+    
+    // this.setState({
+    //   currentTime: this.audio.currentTime + 5000
+    // })
+    console.log(this.state.currentTime)
   }
 
   render() {
@@ -95,7 +101,7 @@ class Sermon extends Component {
             <PlayArrowIcon className={classes.playIcon} onClick={this.handlePlay} />}
           </IconButton>
           <IconButton aria-label="Next">
-            {theme.direction === 'rtl' ? <Replay5 className={classes.timeIcon} /> : <Forward5 className={classes.timeIcon} />}
+            {theme.direction === 'rtl' ? <Replay5 className={classes.timeIcon} /> : <Forward5 onClick={this.handleForward} className={classes.timeIcon} />}
           </IconButton>
         </div>
       </div>

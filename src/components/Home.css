@@ -1,7 +1,7 @@
 #home {
   display: grid;
   grid-template-columns: 15% 1fr 1fr 15%;
-  grid-template-rows:450px 0px 300px 300px;
+  grid-template-rows:450px 0px 300px 200px 250px;
 }
 
 #hero {
@@ -15,7 +15,7 @@
 #gathering-info {
   grid-column: 1 / 3;
   grid-row: 3 / 4;
-  background-color: hsla(0, 0%, 100%, 0.93);
+  background-color: #fff;
   border: 1px solid #333;
   border-right: 0;
   transition-duration: 0.7s;
@@ -24,30 +24,40 @@
 #mission-info {
   grid-column: 3 / 5;
   grid-row: 3 / 4;
-  background-color: hsla(0, 0%, 100%, 0.93);
+  background-color: #fff;
   color: #000;
   border: 1px solid #333;
   border-left: 0;
   transition-duration: 0.7s;
 }
 
-#gathering-info:hover,
-#mission-info:hover {
+
+#sermon-info {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
   background-color: #fff;
+  color: #000;
+  border: 1px solid #333;
+  transition-duration: 0.7s;
+  -webkit-box-shadow: 8px 0px 20px -8px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 8px 0px 20px -8px rgba(0, 0, 0, 0.64);
+  box-shadow: 8px 0px 20px -8px rgba(0, 0, 0, 0.64);
 }
+
+
 
 #giving-info {
   grid-column: 2 / 4;
-  grid-row: 4 /5;
+  grid-row: 5 /6;
   background-color: hsl(163, 41%, 45%, 0.9);
   color: #fff;
   border: 1px solid #000;
   transition-duration: 0.3s;
   margin-top: 2px;
   margin-bottom: 18px;
-  -webkit-box-shadow: 12px 12px 10px -8px rgba(0, 0, 0, 0.64);
-  -moz-box-shadow: 12px 12px 10px -8px rgba(0, 0, 0, 0.64);
-  box-shadow: 12px 12px 10px -8px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 8px 8px 20px -8px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 8px 8px 20px -8px rgba(0, 0, 0, 0.64);
+  box-shadow: 8px 8px 20px -8px rgba(0, 0, 0, 0.64);
 }
 
 #giving-info a {
@@ -112,7 +122,7 @@
   }
 
   #home {
-    grid-template-rows: 500px 0px 300px 300px;
+    grid-template-rows: 500px 0px 300px 200px 250px;
   }
 }
 

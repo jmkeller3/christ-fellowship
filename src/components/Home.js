@@ -32,6 +32,8 @@ export class Home extends Component {
   render() {
     const StatementLink = props => <Link to="/statement" {...props} />;
     const AboutLink = props => <Link to="/about" {...props} />;
+    // const SermonLink = props => <Link to="/sermons" {...props} />;
+    const EventLink = props => <Link to="/events" {...props} />;
 
     return (
       <main id="home">
@@ -78,6 +80,34 @@ export class Home extends Component {
             component={StatementLink}
           >
             More Information
+          </Button>
+        </section>
+        {/* <section className="info" id="sermon-info">
+          <h3>Latest Sermon</h3>
+          <p>
+            We strive to preach expositionally through the whole console of God's Word. You can hear our last sermon by clicking the link below.
+          </p>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            component={SermonLink}
+          >
+            Listen to Sermon
+          </Button>
+        </section> */}
+        <section className="info" id="sermon-info">
+          <h3>Coming Events</h3>
+          <p>
+            We strive to preach expositionally through the whole console of God's Word. You can hear our last sermon by clicking the link below.
+          </p>
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            component={EventLink}
+          >
+            Coming Events
           </Button>
         </section>
         <section className="info" id="giving-info">
