@@ -34,10 +34,10 @@ export default class Contact extends Component {
             <h2>Come visit with us</h2>
             <h2>Every Sunday at 10:30 AM</h2>
             <h3 id="meeting">
-              We Meet at the Hyatt Place in Lehi, UT at 3700 N Outlet Pkwy
+              We Currently Meet at the Hyatt Place in Lehi, UT at 3700 N Outlet Pkwy
             </h3>
             <Button
-              size="medium" color='primary' variant='contained' href="https://goo.gl/maps/E9PjHywy1htuDAiG9" style={{margin: 'auto'}} >
+              size="medium" color='primary' variant='contained' target="_blank" href="https://goo.gl/maps/E9PjHywy1htuDAiG9" style={{margin: 'auto'}} >
                Get Directions
               </Button>
           </div>

@@ -99,7 +99,7 @@ export class Home extends Component {
         <section className="info" id="sermon-info">
           <h3>Coming Events</h3>
           <p>
-            We strive to preach expositionally through the whole console of God's Word. You can hear our last sermon by clicking the link below.
+            We host free camps, cookouts, and other communuity activities throughout the year. Click below to see what is ahead.
           </p>
           <Button
             variant="contained"
