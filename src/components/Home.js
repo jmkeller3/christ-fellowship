@@ -99,8 +99,7 @@ export class Home extends Component {
         <section className="info" id="sermon-info">
           <h3>Coming Events</h3>
           <p>
-            We host free camps, cookouts, and other communuity activities throughout the year. Click below to see what is ahead.
-          </p>
+            We host free camps, cookouts, and other communuity activities throughout the year. Click below to see what is ahead.          </p>
           <Button
             variant="contained"
             color="primary"
