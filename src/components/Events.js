@@ -14,9 +14,9 @@ const upcomingEvents = [
     // },
     {
         title: 'Free Summer Camp',
-        details: 'Join us for our annual free kids camp in Lehi, UT. Come play games, sing songs, and have fun!',
+        details: 'Join us for our annual free kids camp in Lehi, UT. This western-themed camp for kids ages 4-10 will provide kids with a place to hear stories from the Bible, play fun games, eat snacks, and hang out with friends (while making new ones!). Come join the posse and help the Reno Kid protect the town against the Bubblegum Bandit! Please click below to register.',
         date: 'July 8-12, 2019',
-        fbLink: 'https://www.facebook.com/events/2357023890994696/'
+        fbLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdTwC5Mff7tBAj8K3xNcma1g1BnpU2NZWaMts4ouMfvYcEM1Q/viewform'
     }
 ]
 
