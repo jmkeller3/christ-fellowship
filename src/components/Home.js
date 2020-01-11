@@ -31,7 +31,7 @@ export class Home extends Component {
   
   render() {
     const StatementLink = props => <Link to="/statement" {...props} />;
-    const AboutLink = props => <Link to="/about" {...props} />;
+    const VisitLink = props => <Link to="/contact" {...props} />;
     // const SermonLink = props => <Link to="/sermons" {...props} />;
     const EventLink = props => <Link to="/events" {...props} />;
 
@@ -61,7 +61,7 @@ export class Home extends Component {
             variant="contained"
             color="primary"
             size="large"
-            component={AboutLink}
+            component={VisitLink}
           >
             Weekly Gathering
           </Button>

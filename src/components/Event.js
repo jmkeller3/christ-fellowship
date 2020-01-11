@@ -41,7 +41,7 @@ function Event(props) {
             </Typography>
             <br />
             <CardActions>
-                <Button size="small" color='primary' variant='contained' target="_blank" href={props.link} style={{margin: 'auto'}}>See more details</Button>
+                <Button size="small" color='primary' variant='contained' disabled target="_blank" href={props.link} style={{margin: 'auto'}}>More details to come</Button>
             </CardActions>
           </CardContent>
 

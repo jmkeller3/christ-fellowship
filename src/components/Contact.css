@@ -49,8 +49,9 @@
 
 #meeting {
   padding: 0 30px;
-  font-weight: 200;
-  line-height: 1.5
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: larger;
 }
 
 @media screen and (max-width: 480px) {

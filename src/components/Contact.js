@@ -37,7 +37,7 @@ export default class Contact extends Component {
               We Currently Meet at the Hyatt Place in Lehi, UT at 3700 N Outlet Pkwy
             </h3>
             <Button
-              size="medium" color='primary' variant='contained' target="_blank" href="https://goo.gl/maps/E9PjHywy1htuDAiG9" style={{margin: 'auto'}} >
+              size="large" color='primary' variant='contained' target="_blank" href="https://goo.gl/maps/E9PjHywy1htuDAiG9" style={{margin: 'auto'}} >
                Get Directions
               </Button>
           </div>

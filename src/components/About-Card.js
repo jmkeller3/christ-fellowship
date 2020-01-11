@@ -343,7 +343,7 @@ export class AboutCard extends React.Component {
               variant="contained"
               color="primary"
               size="large"
-              href="/statement"
+              href="/#/statement"
               style={{
                 maxWidth: 250,
                 marginLeft: "auto",
