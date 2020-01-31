@@ -58,12 +58,13 @@
   #connect h2 {
     padding: 10px;
   }
+  
 }
 
 @media screen and (max-width: 769px) {
   #connect a {
     color: #44a187;
-    padding: 5px 20px;
+    padding: 4px 16px;
     transition-duration: 0.5s;
   }  
   #connect h2 {

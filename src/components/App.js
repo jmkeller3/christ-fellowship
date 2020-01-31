@@ -6,8 +6,9 @@ import AboutCard from "./About-Card";
 import Home from "./Home";
 import Contact from "./Contact";
 import Statement from "./Statement";
-import Sermons from './Sermons';
+// import Sermons from './Sermons';
 import Events from './Events';
+import Podcast from './Podcast';
 import Button from "@material-ui/core/Button";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -49,7 +50,7 @@ class App extends Component {
       {
         path: "/sermons",
         exact: true,
-        main: () => <Sermons />
+        main: () => <Podcast />
       },
       {
         path: "/events",
