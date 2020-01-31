@@ -1,19 +1,29 @@
 {
-  "main.css": "/static/css/main.82440c54.chunk.css",
-  "main.js": "/static/js/main.bcb243ff.chunk.js",
-  "main.js.map": "/static/js/main.bcb243ff.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/css/2.608a5a21.chunk.css": "/static/css/2.608a5a21.chunk.css",
-  "static/js/2.0e262872.chunk.js": "/static/js/2.0e262872.chunk.js",
-  "static/js/2.0e262872.chunk.js.map": "/static/js/2.0e262872.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.6483020c0911c52dfb5f46c73f7d96a1.js": "/precache-manifest.6483020c0911c52dfb5f46c73f7d96a1.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/2.608a5a21.chunk.css.map": "/static/css/2.608a5a21.chunk.css.map",
-  "static/css/main.82440c54.chunk.css.map": "/static/css/main.82440c54.chunk.css.map",
-  "static/media/Logo.svg": "/static/media/Logo.de69ee6a.svg",
-  "static/media/Prayer.jpg": "/static/media/Prayer.140a3e57.jpg",
-  "static/media/Tim.jpg": "/static/media/Tim.87eb56bd.jpg",
-  "static/media/Zach.jpeg": "/static/media/Zach.87143794.jpeg"
+  "files": {
+    "main.css": "/static/css/main.84439668.chunk.css",
+    "main.js": "/static/js/main.71d2281f.chunk.js",
+    "main.js.map": "/static/js/main.71d2281f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6de9407d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6de9407d.js.map",
+    "static/css/2.764ccc25.chunk.css": "/static/css/2.764ccc25.chunk.css",
+    "static/js/2.1cbee9e5.chunk.js": "/static/js/2.1cbee9e5.chunk.js",
+    "static/js/2.1cbee9e5.chunk.js.map": "/static/js/2.1cbee9e5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5156b1cd33c6c28722a9ff5a7d2b918f.js": "/precache-manifest.5156b1cd33c6c28722a9ff5a7d2b918f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.84439668.chunk.css.map": "/static/css/main.84439668.chunk.css.map",
+    "static/js/2.1cbee9e5.chunk.js.LICENSE.txt": "/static/js/2.1cbee9e5.chunk.js.LICENSE.txt",
+    "static/media/Logo.svg": "/static/media/Logo.de69ee6a.svg",
+    "static/media/Prayer.jpg": "/static/media/Prayer.140a3e57.jpg",
+    "static/media/Tim.jpg": "/static/media/Tim.87eb56bd.jpg",
+    "static/media/Zach.jpeg": "/static/media/Zach.87143794.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6de9407d.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.1cbee9e5.chunk.js",
+    "static/css/main.84439668.chunk.css",
+    "static/js/main.71d2281f.chunk.js"
+  ]
 }
