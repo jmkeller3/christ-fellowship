@@ -9,16 +9,16 @@ const upcomingEvents = [
     {
         title: 'Free Community Cookout',
         details: 'Come get some free food and meet your neighbors! The location will be Olympic Park in Lehi, UT. Starts at 5:00 PM and will last until about 7:30 PM. More details to come!',
-        // Click below for more details
+        
         date: 'Friday, June 12, 2020',
         fbLink: '#'
     },
     {
         title: 'Free Summer Camp',
-        details: 'Join us for our annual free kids camp in Lehi, UT. This western-themed camp for kids ages 4-10 will provide kids with a place to hear stories from the Bible, play fun games, eat snacks, and hang out with friends (while making new ones!). More details to come!',
+        details: 'Join us for our annual free kids camp in Lehi, UT. This western-themed camp for kids ages 4-10 will provide kids with a place to hear stories from the Bible, play fun games, eat snacks, and hang out with friends (while making new ones!).  Click below for more details!',
         // Come join the posse and help the Reno Kid protect the town against the Bubblegum Bandit! Please click below to register.'
         // date: 'July 6-10, 2020'
-        fbLink: '#'
+        fbLink: 'https://www.facebook.com/events/458535165031776/'
     }
 ]
 
