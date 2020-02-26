@@ -51,7 +51,7 @@ export class Home extends Component {
           </div>
         </section>
         <section className="info" id="gathering-info">
-          <h3>Weekly Gathering</h3>
+          <h2>Come Worship with Us</h2>
           <p>
             We gather every Sunday to celebrate the resurrection of Jesus and
             the life that we have through the gospel. Click below for more
@@ -63,11 +63,11 @@ export class Home extends Component {
             size="large"
             component={VisitLink}
           >
-            Weekly Gathering
+            Sunday Gathering
           </Button>
         </section>
         <section className="info" id="mission-info">
-          <h3>Mission Statement</h3>
+          <h2>Mission Statement</h2>
           <p>
             Our purpose is to glorify God by multiplying, gathering, and
             equipping disciples of Jesus Christ through the power of the Holy
@@ -83,9 +83,9 @@ export class Home extends Component {
           </Button>
         </section>
         <section className="info" id="sermon-info">
-          <h3>Latest Sermon</h3>
+          <h2>Latest Sermon</h2>
           <p>
-            We strive to preach expositionally through the whole console of God's Word. You can hear our last sermon by clicking the link below.
+            We strive to preach expositionally through the whole council of God's Word. You can hear our last sermon by clicking the link below.
           </p>
           <Button
             variant="contained"
@@ -93,11 +93,11 @@ export class Home extends Component {
             size="large"
             component={SermonLink}
           >
-            Listen to Sermon
+            Listen to Sermons
           </Button>
         </section>
         <section className="info" id="event-info">
-          <h3>Coming Events</h3>
+          <h2>Coming Events</h2>
           <p>
             We host free camps, cookouts, and other communuity activities throughout the year. Click below to see what is ahead.
           </p>
@@ -111,7 +111,7 @@ export class Home extends Component {
           </Button>
         </section>
         <section className="info" id="giving-info">
-          <h3>Giving</h3>
+          <h2>Giving</h2>
           <p>
             If you want to support our ministry, you can give when we gather
             together every Sunday or online through the link below.

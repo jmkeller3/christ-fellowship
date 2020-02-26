@@ -56,3 +56,10 @@ ul li {
   opacity: 0;
   transition: opacity 5ms ease-in-out;
 }
+
+@media screen and (max-width: 375px) {
+  #hide {
+    display: none;
+  }
+  
+}

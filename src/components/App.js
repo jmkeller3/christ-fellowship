@@ -76,8 +76,8 @@ class App extends Component {
             <Button component={AboutLink}>About</Button>
             <Button component={ContactLink}>Visit Us</Button>
             <Button component={StatementLink}>Beliefs</Button>
-            {/* <Button component={SermonLink}>Sermons</Button>
-            <Button component={EventLink}>Events</Button> */}
+            <Button id="hide" component={SermonLink}>Sermons</Button>
+            {/* <Button component={EventLink}>Events</Button> */}
             
             
           </nav>
