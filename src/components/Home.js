@@ -50,20 +50,26 @@ export class Home extends Component {
           <img src={Logo} alt="Christ Fellowship Church Logo" />
           </div>
         </section>
-        <section className="info" id="gathering-info">
+        <section className="info" id="gathering-info" >
           <h2>Come Worship with Us</h2>
           <p>
-            We gather every Sunday to celebrate the resurrection of Jesus and
+            {/* We gather every Sunday to celebrate the resurrection of Jesus and
             the life that we have through the gospel. Click below for more
-            infomation.
+            infomation. */}
+
+            Due to Covid-19, we will be postponing our usual corporate gatherings. Click the link below for updates and more details.
           </p>
           <Button
             variant="contained"
-            color="primary"
+            // color="primary"
             size="large"
-            component={VisitLink}
+            href="https://www.facebook.com/christfellowshiplehi/photos/a.636612417157495/636607330491337/?type=3&theater"
+            target="_blank"
+            id="urgent"
+            // component={VisitLink}
           >
-            Sunday Gathering
+            Updated Info
+            {/* Sunday Gathering */}
           </Button>
         </section>
         <section className="info" id="mission-info">

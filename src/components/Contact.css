@@ -54,6 +54,21 @@
   font-size: larger;
 }
 
+.urgent {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #9a0036;
+  padding: 0 60px;
+}
+
+#urgent-btn {
+  background-color: #9a0036;
+  
+}
+
 @media screen and (max-width: 480px) {
   #connect h2 {
     padding: 10px;

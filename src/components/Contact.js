@@ -31,7 +31,18 @@ export default class Contact extends Component {
             </span>
           </div>
           <div id="gathering">
-            <h2>Come visit with us</h2>
+           
+            <h1 className="urgent">
+                  Due to Covid-19, we will no longer be gathering corporately. For more information and updates, please click the link below.
+            </h1>
+
+              <Button
+              size="large" id="urgent-btn" variant='contained' target="_blank" href="https://www.facebook.com/christfellowshiplehi/photos/a.636612417157495/636607330491337/?type=3&theater" style={{margin: 'auto'}} >
+               See Updates
+              </Button> 
+
+            {/* 
+             <h2>Come visit with us</h2>
             <h2>Every Sunday at 11:00 AM</h2>
             <h3 id="meeting">
               We Currently Meet at the Hyatt Place in Lehi, UT at 3700 N Outlet Pkwy
@@ -39,7 +50,7 @@ export default class Contact extends Component {
             <Button
               size="large" color='primary' variant='contained' target="_blank" href="https://goo.gl/maps/E9PjHywy1htuDAiG9" style={{margin: 'auto'}} >
                Get Directions
-              </Button>
+              </Button> */}
           </div>
         </div>
       </main>

@@ -110,6 +110,10 @@
   margin-top: -20%;
 }
 
+#urgent {
+  background-color: #f70056;
+}
+
 @media screen and (max-width: 769px) {
   #home {
     display: inline-block;
