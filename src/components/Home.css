@@ -112,6 +112,7 @@
 
 #urgent {
   background-color: #f70056;
+  color: #fff;
 }
 
 @media screen and (max-width: 769px) {
