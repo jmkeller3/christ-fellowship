@@ -115,6 +115,10 @@
   color: #fff;
 }
 
+.highlight {
+  color: rgb(0, 172, 120);;
+}
+
 @media screen and (max-width: 769px) {
   #home {
     display: inline-block;

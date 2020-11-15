@@ -36,11 +36,8 @@
 }
 
 #gathering {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
+  display: grid;
+  place-items: center;
 }
 
 #gathering h2 {
@@ -52,6 +49,7 @@
   font-weight: 500;
   line-height: 1.5;
   font-size: larger;
+  margin: 0 auto;
 }
 
 .urgent {

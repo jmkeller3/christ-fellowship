@@ -57,20 +57,8 @@ export class Home extends Component {
             the life that we have through the gospel. Click below for more
             infomation. */}
 
-            Due to Covid-19, we will be postponing our usual corporate gatherings. Click the link below for updates and more details.
+            Our current church gatherings are subject to change with the unfolding COVID-19 situation. For more information on when, where, and if we will hold a gathering, please contatus us via email (<span className="highlight">Timothy@christfellowshiputah.org</span>) or by phone (<span className="highlight">801-831-4242</span>)
           </p>
-          <Button
-            variant="contained"
-            // color="primary"
-            size="large"
-            href="https://www.facebook.com/christfellowshiplehi/photos/a.636612417157495/636607330491337/?type=3&theater"
-            target="_blank"
-            id="urgent"
-            // component={VisitLink}
-          >
-            Updated Info
-            {/* Sunday Gathering */}
-          </Button>
         </section>
         <section className="info" id="mission-info">
           <h2>Mission Statement</h2>

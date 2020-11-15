@@ -32,18 +32,21 @@ export default class Contact extends Component {
           </div>
           <div id="gathering">
            
-            <h1 className="urgent">
+            {/* <h1 className="urgent">
                   Due to Covid-19, we will no longer be gathering corporately. For more information and updates, please click the link below.
             </h1>
 
               <Button
               size="large" id="urgent-btn" variant='contained' target="_blank" href="https://www.facebook.com/christfellowshiplehi/photos/a.636612417157495/636607330491337/?type=3&theater" style={{margin: 'auto'}} >
                See Updates
-              </Button> 
+              </Button>  */}
 
-            {/* 
+            
              <h2>Come visit with us</h2>
-            <h2>Every Sunday at 11:00 AM</h2>
+              <h3 id="meeting">
+              Our current church gatherings are subject to change with the unfolding COVID-19 situation. For more information on when, where, and if we will hold a gathering, please contatus us via email (<span className="highlight">Timothy@christfellowshiputah.org</span>) or by phone (<span className="highlight">801-831-4242</span>)
+              </h3>
+            {/* <h2>Every Sunday at 11:00 AM</h2>
             <h3 id="meeting">
               We Currently Meet at the Hyatt Place in Lehi, UT at 3700 N Outlet Pkwy
             </h3>
