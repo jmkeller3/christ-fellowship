@@ -1,66 +1,68 @@
-import React, { Component } from "react";
-import Logo from "../img/Logo.svg";
-import Button from "@material-ui/core/Button";
-import BG from "../img/Prayer.jpg";
-import { withStyles } from "@material-ui/core/styles";
-import {Link} from 'react-router-dom';
-import "./Home.css";
-
+import React, { Component } from 'react'
+import Logo from '../img/Logo.svg'
+import Button from '@material-ui/core/Button'
+import BG from '../img/Prayer.jpg'
+import { withStyles } from '@material-ui/core/styles'
+import { Link } from 'react-router-dom'
+import './Home.css'
 
 // Themes for material-ui components
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "flex-end"
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
   },
   icon: {
-    margin: theme.spacing.unit * 2
+    margin: theme.spacing.unit * 2,
   },
   iconHover: {
     margin: theme.spacing.unit * 2,
-    "&:hover": {
-      color: "#44a187"
-    }
-  }
-});
-
-
+    '&:hover': {
+      color: '#44a187',
+    },
+  },
+})
 
 export class Home extends Component {
-  
   render() {
-    const StatementLink = props => <Link to="/statement" {...props} />;
-    const VisitLink = props => <Link to="/contact" {...props} />;
-    const SermonLink = props => <Link to="/sermons" {...props} />;
-    const EventLink = props => <Link to="/events" {...props} />;
+    const StatementLink = (props) => <Link to='/statement' {...props} />
+    const VisitLink = (props) => <Link to='/contact' {...props} />
+    const SermonLink = (props) => <Link to='/sermons' {...props} />
+    const EventLink = (props) => <Link to='/events' {...props} />
 
     return (
-      <main id="home">
+      <main id='home'>
         <section
           style={{
             backgroundImage: `url(${BG})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            opacity: 0.8
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            opacity: 0.8,
           }}
-          id="hero"
+          id='hero'
         >
-        <div className="hero-container">
-          <img src={Logo} alt="Christ Fellowship Church Logo" />
+          <div className='hero-container'>
+            <img src={Logo} alt='Christ Fellowship Church Logo' />
           </div>
         </section>
-        <section className="info" id="gathering-info" >
+        <section className='info' id='gathering-info'>
           <h2>Come Worship with Us</h2>
           <p>
-            {/* We gather every Sunday to celebrate the resurrection of Jesus and
+            We gather every Sunday to celebrate the resurrection of Jesus and
             the life that we have through the gospel. Click below for more
-            infomation. */}
-
-            Our current church gatherings are subject to change with the unfolding COVID-19 situation. For more information on when, where, and if we will hold a gathering, please contatus us via email (<span className="highlight">Timothy@christfellowshiputah.org</span>) or by phone (<span className="highlight">801-831-4242</span>)
+            infomation.
           </p>
+          <Button
+            variant='contained'
+            color='primary'
+            size='large'
+            component={VisitLink}
+          >
+            Visiting
+          </Button>
         </section>
-        <section className="info" id="mission-info">
+        <section className='info' id='mission-info'>
           <h2>Mission Statement</h2>
           <p>
             Our purpose is to glorify God by multiplying, gathering, and
@@ -68,61 +70,63 @@ export class Home extends Component {
             Spirit.
           </p>
           <Button
-            variant="contained"
-            color="primary"
-            size="large"
+            variant='contained'
+            color='primary'
+            size='large'
             component={StatementLink}
           >
             More Information
           </Button>
         </section>
-        <section className="info" id="sermon-info">
+        <section className='info' id='sermon-info'>
           <h2>Latest Sermon</h2>
           <p>
-            We strive to preach expositionally through the whole council of God's Word. You can hear our last sermon by clicking the link below.
+            We strive to preach expositionally through the whole council of
+            God's Word. You can hear our last sermon by clicking the link below.
           </p>
           <Button
-            variant="contained"
-            color="primary"
-            size="large"
+            variant='contained'
+            color='primary'
+            size='large'
             component={SermonLink}
           >
             Listen to Sermons
           </Button>
         </section>
-        <section className="info" id="event-info">
+        <section className='info' id='event-info'>
           <h2>Coming Events</h2>
           <p>
-            We host free camps, cookouts, and other communuity activities throughout the year. Click below to see what is ahead.
+            We host free camps, cookouts, and other communuity activities
+            throughout the year. Click below to see what is ahead.
           </p>
           <Button
-            variant="contained"
-            color="primary"
-            size="large"
+            variant='contained'
+            color='primary'
+            size='large'
             component={EventLink}
           >
             Coming Events
           </Button>
         </section>
-        <section className="info" id="giving-info">
+        <section className='info' id='giving-info'>
           <h2>Giving</h2>
           <p>
             If you want to support our ministry, you can give when we gather
             together every Sunday or online through the link below.
           </p>
           <Button
-            variant="contained"
-            color="secondary"
-            href="https://tithe.ly/give_new/www/#/tithely/give-one-time/567613"
-            target="_blank"
-            size="large"
+            variant='contained'
+            color='secondary'
+            href='https://tithe.ly/give_new/www/#/tithely/give-one-time/567613'
+            target='_blank'
+            size='large'
           >
             Give
           </Button>
         </section>
       </main>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(Home);
+export default withStyles(styles)(Home)
