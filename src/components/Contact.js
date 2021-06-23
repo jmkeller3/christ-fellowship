@@ -12,7 +12,7 @@ export default class Contact extends Component {
           <div id='gathering'>
             <h1>Come Visit with Us</h1>
 
-            <h2>Every Sunday at 11:00 AM</h2>
+            <h2>Every Sunday at 10:30 AM</h2>
             <h3 id='meeting'>
               We Currently Meet at I Am Recovery in Lehi, UT at 121 East State
               Street

@@ -18,7 +18,7 @@ const upcomingEvents = [
     details:
       'Hear ye! Hear ye! This free medieval themed camp for kids will provide a place for kids to hear stories from the Bible, play fun games, eat snacks, and make new friends. Come join the knights and princesses as they journey to learn more about the Word of God. Huzzah! The location will be Olympic Park in Lehi, UT (2700 W Parkside Dr, Lehi, UT 84043) and will take place 9:00AM-12:00PM July 12 through July 16',
     // Come join the posse and help the Reno Kid protect the town against the Bubblegum Bandit! Please click below to register.'
-    date: 'July 12-16, 2021',
+    date: 'July 12-16, 2021, 9:00 AM - 12:00 PM',
     fbLink: 'https://fb.me/e/28HOhN65o/',
   },
 ]
