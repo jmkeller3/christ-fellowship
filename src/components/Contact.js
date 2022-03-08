@@ -14,15 +14,15 @@ export default class Contact extends Component {
 
             <h2>Every Sunday at 10:30 AM</h2>
             <h3 id='meeting'>
-              We Currently Meet at I Am Recovery in Lehi, UT at 121 East State
-              Street
+              We Currently Meet at the Towne Hub in American Fork, UT at 120
+              West Main Street
             </h3>
             <Button
               size='large'
               color='primary'
               variant='contained'
               target='_blank'
-              href='https://goo.gl/maps/m8fZgedtGxKsHRwf8'
+              href='https://goo.gl/maps/h92BVwfppnWU7Qpn9'
               style={{ margin: '1rem auto' }}
             >
               Get Directions
